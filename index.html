@@ -92,7 +92,7 @@ body{
 }
 .check-actions button:active{transform:scale(.9)}
 .check-actions button.sel-yes{
-  background:#16a34a;border-color:#16a34a;color:white
+  background:#b45309;border-color:#b45309;color:white
 }
 .check-actions button.sel-no{
   background:#dc2626;border-color:#dc2626;color:white
@@ -210,7 +210,7 @@ body{
 @media print {
   body { background:white !important; padding:0 !important; margin:0 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
   .fixed-bottom, .no-print, .marketing, [class*="返回"], footer, .footer, #返回, .return-bar, .bottom-bar { display:none !important; }
-  .header { background:linear-gradient(135deg,#0c1445,#1a3a6b) !important; color:white !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; padding:20px 16px !important; }
+  .header { background:linear-gradient(135deg,#92400e,#b45309) !important; color:white !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; padding:20px 16px !important; }
   .card, .dim-card, .check-item, .result-card { break-inside:avoid; page-break-inside:avoid; border:1px solid #ddd !important; box-shadow:none !important; }
   .score-card, .result-summary { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
   .tabs { display:none !important; }
@@ -229,7 +229,7 @@ body{
 <div id="checkPage">
   <div class="header">
     <div class="badge">🥉 铜级专属工具</div>
-    <h1>📋 初创企业财税合规入门自查</h1>
+    <h1>📋 初创企业财税合规入门自查 <span class="v3-badge">V3.0</span></h1>
     <div class="sub">8大维度 · 全程Checklist · 一键生成合规报告</div>
   </div>
 
@@ -304,6 +304,7 @@ body{
     <div class="footer">
       <p>宇守信投资管理咨询（北京）有限公司 © 2026</p>
       <p style="margin-top:4px"><span class="name">洪淳宇</span> · 186-0129-4989 · hongchunyu042896</p>
+      <p style="margin-top:4px; font-size:10px; color:#999;">版本 V2.0</p>
     </div>
   </div>
 </div>
@@ -615,5 +616,21 @@ function downloadPDF(){
   window.print();
 }
 </script>
+
+<div class="bottom-bar" style="position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-top:1px solid rgba(0,0,0,.06);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:16px;font-size:12px;color:#b45309;z-index:100">
+  <span style="font-weight:600;color:#92400e">宇守信咨询</span>
+  <span style="color:#d4a843">|</span>
+  <span>186-0129-4989</span>
+  <span style="color:#d4a843">|</span>
+  <span>铜级 V3.0</span>
+</div>
+
+
+  <div style="text-align:center; padding:16px; margin-top:4px;">
+    <a href="https://sparrow528.github.io/copper-toolbox/" style="display:inline-block; padding:10px 24px; background:#fef3c7; color:#b45309; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none; border:1px solid #fcd34d;">
+      ← 返回铜级会员入口
+    </a>
+  </div>
+
 </body>
 </html>
